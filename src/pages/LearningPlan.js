@@ -147,7 +147,11 @@ const LearningPlan = () => {
       monthly: updatedMonthlyGoals
     }));
   };
-  
+
+  //alert
+  function Alert(){
+      alert("text");
+  }
   // 获取优先级标签颜色
   const getPriorityColor = (priority) => {
     switch(priority) {
@@ -346,7 +350,7 @@ const LearningPlan = () => {
                 >
                   <p>{item.description}</p>
                   <div style={{ textAlign: 'right', marginTop: 8 }}>
-                    <Button type="link" href={item.link}>
+                    <Button type="link" onclick="Alert()">
                       查看详情
                     </Button>
                   </div>
